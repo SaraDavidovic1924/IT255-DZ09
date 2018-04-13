@@ -1,32 +1,8 @@
 <app-menu-bar></app-menu-bar>
 
-<img src="../assets/burg.jpg" >
+<img src="../assets/burger.jpg" >
     
-  <h2>Burgers on flek</h2>
-  <div class="sara" style="max-width:250px">
-    <img class="slideShow" src="../assets/burg.jpg" style="width:100%">
-    <img class="slideShow" src="../assets/fries.jpg" style="width:100%">
-    <img class="slideShow" src="../assets/salata.jpg" style="width:100%">
-    <img class="slideShow" src="../assets/sokic.jpg" style="width:100%">
-  </div>
-  
-  <script>
-  var myIndex = 0;
-  carousel();
-  
-  function carousel() {
-      var i;
-      var x = document.getElementsByClassName("slideShow");
-      for (i = 0; i < x.length; i++) {
-         x[i].style.display = "none";  
-      }
-      myIndex++;
-      if (myIndex > x.length) {myIndex = 1}    
-      x[myIndex-1].style.display = "block";  
-      setTimeout(carousel, 2000); 
-  }
-  </script>
-
+  <app-slideshow></app-slideshow>
 
     <h1>BURGERS</h1>
     <table>
